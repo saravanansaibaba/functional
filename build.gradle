@@ -1,2 +1,17 @@
 apply plugin:'java'
 apply plugin:'eclipse'
+
+/*
+ * A task is an object
+ * - A task has an API (methods)
+ * - A task has list of activities
+ * A gradle build is a program
+ */
+
+ task hello
+
+ hello {
+  doLast {
+    println "hello, world"
+  }
+ }
